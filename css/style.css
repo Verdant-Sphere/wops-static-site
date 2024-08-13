@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* light gray background */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #3498db; /* nice blue color */
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  he {
+    color: red; /* nice blue color */
+    font-size: 36px;
+    font-weight: bold;
+  }
