@@ -19,7 +19,7 @@ jobs:
 
       - name: Upload static site to S3
         run: |
-          aws s3 sync ./css 404.html index.html s3://${{secrets.BUCKET_NAME}}
+          aws s3 sync ./ s3://${{secrets.BUCKET_NAME}}
     
       
      
