@@ -17,9 +17,9 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
 
-      - name: Check CLI if installed
+      - name: Upload static site to S3
         run: |
-          aws --version
+          aws s3 sync ./css 404.html index.html s3://${{secrets.BUCKET_NAME}}
     
       
      
